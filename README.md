@@ -6,7 +6,7 @@ Plugin ID: `herdr.command-list`
 
 ## Preview
 
-![Command List preview](preview/preview.png)
+![Command List preview](preview/preview-3.png)
 
 ![Command List preview 2](preview/preview-2.png)
 
