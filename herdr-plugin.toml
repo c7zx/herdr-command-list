@@ -1,0 +1,28 @@
+id = "herdr.command-lists"
+name = "Command Lists"
+version = "1.0.2"
+min_herdr_version = "0.9.0"
+description = "Small, auditable command lists with tabs, sections, search, and quick execution."
+platforms = ["linux", "macos"]
+
+[[build]]
+platforms = ["linux", "macos"]
+command = ["env", "GOTOOLCHAIN=local", "go", "build", "-trimpath", "-o", "command-lists", "./cmd/herdr-command-lists"]
+
+[[panes]]
+id = "command-lists"
+title = "Command Lists"
+description = "Browse and run commands from named lists"
+platforms = ["linux", "macos"]
+placement = "popup"
+width = "78%"
+height = "62%"
+command = ["./command-lists", "ui"]
+
+[[actions]]
+id = "toggle"
+title = "Command Lists"
+description = "Open Command Lists"
+platforms = ["linux", "macos"]
+contexts = ["global", "workspace", "tab", "pane"]
+command = ["./command-lists", "open"]
