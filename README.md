@@ -67,7 +67,10 @@ Edit a command list:
 nano "$(herdr plugin config-dir herdr.command-lists)/lists/Main.md"
 ```
 
-A fresh installation starts with `Main.md`, `Systems.md`, and `More.md`.
+A fresh installation starts with Main.md, Systems.md, and More.md. These are example lists and can be deleted.
+
+Place your own command lists in:
+$(herdr plugin config-dir herdr.command-lists)/lists/
 
 Rules:
 
